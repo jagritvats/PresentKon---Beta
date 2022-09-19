@@ -6,10 +6,10 @@ const path = require('path');
 require('dotenv/config');
 
 // importing files
-const faceRouter = require('./routes/faceRouter');
 
 const app = express();
 app.use(cors());
+const faceRouter = require('./routes/faceRouter');
 
 const PORT = process.env.PORT || 5000;
 
