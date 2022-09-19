@@ -3,11 +3,11 @@
     font-size: 50px;
     margin: 10px;
 }
+
 .Container{
     display: flex;
     flex-direction: column;
     width: 100%;
-    
 }
 
 .search{

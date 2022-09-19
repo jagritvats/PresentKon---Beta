@@ -2,7 +2,6 @@
     --btnbgR:#ff4f29;
 }
 .Container{
-    height: 120px;
     width: 90%;
     border: 1px solid black;
     border-radius: 15px;
@@ -24,9 +23,7 @@
 .main{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 200px;
-    padding-right: 200px;
+    justify-content: space-around;
 }
 
 .left{

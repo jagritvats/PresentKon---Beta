@@ -1,3 +1,3 @@
 # PresentKon - App
 
-Present Kon Application for Hack the Mountains 3.0 by Team Logicode.
+Present Kon Application by Team Logicode.

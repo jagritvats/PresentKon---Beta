@@ -66,6 +66,7 @@ export default function TeacherDashboard() {
 		console.log('fire', fireres);
 		alert('Added new Batch');
 	};
+
 	if (isLoading) {
 		return (
 			<div className="loading__container">

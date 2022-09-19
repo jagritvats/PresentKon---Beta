@@ -14,6 +14,7 @@ import { db } from '../../config/firebase';
 import { Button, CircularProgress, MenuItem, TextField } from '@mui/material';
 import axios from 'axios';
 import useStorage from '../../hooks/useStorage';
+import logo from '../../assets/logo.png';
 
 export default function Markattendance(props) {
 	const [data, setData] = useState([]); // batch data -> students list
@@ -224,9 +225,6 @@ export default function Markattendance(props) {
 		<form className={markatt.body} onSubmit={(e) => submitAttendance(e)}>
 			<div className={markatt.header}>
 				<h1>Batch : {params.id.toUpperCase()}</h1>
-			</div>
-
-			<div className={markatt.main}>
 				<div className={markatt.main__fields}>
 					<TextField
 						select
@@ -249,11 +247,13 @@ export default function Markattendance(props) {
 
 					<input type="date" name="" id="" />
 				</div>
+			</div>
 
+			<div className={markatt.main}>
 				<div className={markatt.image_class}>
-					<img src={URL ? URL : ''} alt="img"></img>
+					<img src={URL ? URL : logo} alt="img"></img>
 				</div>
-				<button>View Enlarged</button>
+
 				<div>
 					<input
 						accept="image/*"
@@ -327,20 +327,22 @@ export default function Markattendance(props) {
 					</table>
 				</div>
 			</div>
-			<Button
-				variant="contained"
-				onClick={() => identifyFace()}
-				disabled={URL ? false : true}
-			>
-				Update Attendance
-			</Button>
-			<Button
-				type="submit"
-				variant="contained"
-				onClick={() => submitAttendance()}
-			>
-				Submit Attendance
-			</Button>
+			<div className={markatt.actionbtns}>
+				<Button
+					variant="contained"
+					onClick={() => identifyFace()}
+					disabled={URL ? false : true}
+				>
+					Update Attendance
+				</Button>
+				<Button
+					type="submit"
+					variant="contained"
+					onClick={() => submitAttendance()}
+				>
+					Submit Attendance
+				</Button>
+			</div>
 		</form>
 	);
 }

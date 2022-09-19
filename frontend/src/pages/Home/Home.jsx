@@ -17,35 +17,14 @@ const Home = () => {
 						component="h4"
 						className={styles.home_check}
 					>
-						CHECK WHO'S
-					</Typography>
-					<Typography
-						variant="h4"
-						component="h4"
-						className={styles.home_present}
-					>
-						Present
+						Check who's Present
 					</Typography>
 					<Typography
 						variant="h5"
 						component="h5"
 						className={styles.home_we}
 					>
-						We provide Attentdance
-					</Typography>
-					<Typography
-						variant="h5"
-						component="h5"
-						className={styles.home_services}
-					>
-						services using{' '}
-					</Typography>
-					<Typography
-						variant="h5"
-						component="h5"
-						className={styles.home_facial}
-					>
-						facial recognition
+						We provide Attendance services using facial recognition
 					</Typography>
 
 					<Link to="/dashboard">
@@ -58,17 +37,17 @@ const Home = () => {
 						</Button>
 					</Link>
 				</Box>
-				<img
-					className={styles.home_img}
-					src={MainArt}
-					alt="homepage image"
-					width="20%"
-					heigth="20%"
-				/>
+				<Box className={styles.mainart}>
+					<img
+						className={styles.home_img}
+						src={MainArt}
+						alt="register and profile"
+					/>
+				</Box>
 			</Box>
 			<Box className={styles.home_bottom}>
-				<Box className={styles.home_bottom1}>
-					<img src={Face} alt="Face image" width="20%" heigth="20%" />
+				<Box>
+					<img src={Face} alt="Face image" />
 					<Typography variant="h5" component="h5">
 						Facial Recognition
 					</Typography>
@@ -76,13 +55,8 @@ const Home = () => {
 						Recognise students faces from class photo.
 					</Typography>
 				</Box>
-				<Box className={styles.home_bottom2}>
-					<img
-						src={Student}
-						alt="student image"
-						width="21%"
-						heigth="2%"
-					/>
+				<Box>
+					<img src={Student} alt="student image" />
 					<Typography variant="h5" component="h5">
 						Student Management
 					</Typography>
@@ -90,13 +64,8 @@ const Home = () => {
 						Record and organise your students in batches.
 					</Typography>
 				</Box>
-				<Box className={styles.home_bottom3}>
-					<img
-						src={Attendance}
-						alt="attendacne image"
-						width="20%"
-						heigth="20%"
-					/>
+				<Box>
+					<img src={Attendance} alt="attendacne image" />
 					<Typography variant="h5" component="h5">
 						Attendance Record
 					</Typography>

@@ -2,6 +2,14 @@
 
 }
 
+.body{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+  padding: 0.4em 2em;
+}
+
 .main{
   display: flex;
   flex-direction: column;
@@ -15,7 +23,7 @@
 }
 
 .image_class{
-  width: 400px;
+  max-width: 400px;
   padding: 2em;
 }
 
@@ -42,6 +50,12 @@
     width: 10em;
 }
 
+.actionbtns{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
 .body table{
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -58,3 +72,8 @@
     background-color: #dddddd;
   }
   
+@media (max-width:480px){
+  .main__fields{
+    flex-direction: column;
+  }
+}
