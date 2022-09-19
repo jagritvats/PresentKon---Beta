@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6941b224.css",
+    "main.js": "/static/js/main.54f9a137.js",
+    "static/media/face.png": "/static/media/face.2a403a066164b47ced62.png",
+    "static/media/student.png": "/static/media/student.b43625392a539f6a5908.png",
+    "static/media/attendance.png": "/static/media/attendance.1ab62eec607409b572c4.png",
+    "static/media/MainArt.svg": "/static/media/MainArt.ed9e36d1a3ba7cdbd5f1e8eb96de97f5.svg",
+    "index.html": "/index.html",
+    "main.6941b224.css.map": "/static/css/main.6941b224.css.map",
+    "main.54f9a137.js.map": "/static/js/main.54f9a137.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6941b224.css",
+    "static/js/main.54f9a137.js"
+  ]
+}
